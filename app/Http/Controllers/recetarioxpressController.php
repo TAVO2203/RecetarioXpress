@@ -11,8 +11,8 @@ class recetarioxpressController extends Controller
      return view ('welcome');   
     }
 
-    public function resgistro(){
-        return view('resgister');
+    public function registro(){
+        return view('register');
     }
 
     public function store(Request $request){

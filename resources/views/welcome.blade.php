@@ -22,7 +22,7 @@
         <a href="#">Aprende</a>
         <a href="#">Comunidad</a>
     </nav>
-    <button class="btn1"><strong>Registrarse</strong></button>
+    <button class="btn1" onclick="window.location.href='{{ route('register') }}'"><strong>Registrarse</strong></button>
     <button class="btn2"><strong>Iniciar Sesión</strong></button>
     <div class="icons">
        <div class="fas fa-search" id="search-btn"></div>

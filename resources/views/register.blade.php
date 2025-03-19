@@ -9,27 +9,28 @@
 </head>
 <body>
     <div class="formulario">
-        <form>
+        <form method="POST" action="{{ route('register.store') }}">
+            @csrf
         <h2 class="text-center mb-4">Registro</h2>
 
         <div class="form-floating_mb-3">
-            <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo">
-            <label for="nombre">Nombre</label>
+            <input type="text" name="Nombre" id="Nombre" class="form-control" placeholder="Nombre Completo" required>
+            <label for="Nombre">Nombre</label>
         </div>
 
         <div class="form-floating_mb-3">
-            <input type="email" id="email" placeholder="name@example.com">
-            <label for="email">Email</label>
+            <input type="email" name="Email" id="Email" placeholder="name@example.com" required> 
+            <label for="Email">Email</label>
         </div>
 
         <div class="form-floating_mb-3">
-            <input type="password" id="password" placeholder="Password">
-            <label for="password">Contraseña</label>
+            <input type="password" name="Password" id="Password" placeholder="Password" required>
+            <label for="Password">Contraseña</label>
         </div>
 
         <button class="btn">Registrarse</button>
         <div class="line-width-text">
-                <span> O IRegistrarse con</span>
+                <span> O Registrarse con</span>
             </div>
             <div class="other-login">
                 <a href="#" class="google">
@@ -44,8 +45,5 @@
         </form>
 
     </div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

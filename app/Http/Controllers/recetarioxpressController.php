@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class recetarioxpressController extends Controller
 {
@@ -15,19 +17,6 @@ class recetarioxpressController extends Controller
         return view('register');
     }
 
-    public function store(Request $request){
-        $request->validate([
-            'nombre' => 'required|string|max:50',
-            'email' => 'required|string|max:100',
-            'password' => 'required|string|max:100',
-        ]);
-        usuarios::create([
-            'nombre' => $request->Nombre,
-            'email' => $request->Email,
-            'password' => bcrypt($request->Password),
 
-        ]);
-        return redirect()->back()->with('success', 'Usuario registrado con éxito.');
-    }
 
 }

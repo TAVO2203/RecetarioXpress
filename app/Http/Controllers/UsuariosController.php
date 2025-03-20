@@ -41,7 +41,7 @@ class UsuariosController extends Controller
         $Usuarios->Email = $request->input('Email');
         $Usuarios->Password = $request->input('Password');
         $Usuarios->save();
-        return redirect()->route('Usuarios.index');
+        return redirect()->route('home');
     }
 
     /**

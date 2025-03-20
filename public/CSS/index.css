@@ -260,3 +260,231 @@ section{
     font-weight: bold;
     color: #683219;
 }
+
+.about .container{
+    display: flex;
+    align-items: center;
+    background: #1C1C1C;
+    flex-wrap: wrap;
+}
+.about .container .image img{
+    width: 400px;
+    height: auto;
+}
+.about .container .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.about .container .content h1{
+    font-size: 2rem;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+.about .container .content p{
+    font-size: 1.2rem;
+    color: #eee;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 10%;
+    }
+    .btn1, .btn2{
+        padding: 1rem 2rem;
+        margin-left: 10px;
+    }
+    .types-recipes {
+        justify-content: start;
+        gap: 10px;
+    }
+
+    .item {
+        width: 100px;
+    }
+
+    .item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .item p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+    .header .navbar.active{
+        right: 0;
+    }
+    .btn1, .btn2{
+        width: 40%;
+        text-align: center;
+        margin: 5px 0;
+    }
+    .header .icons{
+        width: 20%;
+    }
+
+    .header .navbar a{
+        color: #000;
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+    .home{
+        background-position: center;
+        justify-content: center;
+        text-align: center; 
+    }
+    .home .content h3{
+        font-size: 4rem;
+    }
+    .home .content p{
+        font-size: 3rem;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content:center; 
+        align-items: center;
+        flex-wrap: nowrap; 
+    }
+
+    .filter-button {
+        text-align: center;
+        width: 90%; 
+        padding: 10px 15px;
+        flex: none; 
+    }
+
+    .filter-button.active {
+        padding: 10px 20px; 
+    }
+    .recetas .content h3{
+        font-size: 4rem;
+    }
+    .recetas .content p{
+        font-size: 2rem;
+    }
+    .types-recipes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .item {
+        width: 30%;
+    }
+
+    .item img {
+        width: 80px;
+        height: 80px;
+    }
+    .about .container .image img{
+        width: 570px;
+        height: auto;
+    }
+    .about .container .content h1{
+        font-size: 3rem;
+    }
+    .about .container .content p{
+        font-size: 2rem;
+    }
+    .container{
+        bottom: 8rem;
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    .header .icons{
+        font-size: 2rem;
+    }
+
+    .btn1, .btn2{
+        width: 30%;
+        text-align: center;
+        margin: 2px;
+    }
+    .home{
+        background-position: center;
+        justify-content: center;
+        text-align: center; 
+    }
+    .home .content h3{
+        font-size:3rem ;
+    }
+    .home .content p{
+        font-size: 2rem;
+    }
+    .recetas .content h3{
+        font-size: 3rem;
+    }
+    .recetas .content p{
+        font-size: 2rem;
+    }
+    .button-container {
+        background-position: center;
+        justify-content: center; 
+    }
+
+    .filter-button {
+        flex: 1 1 auto; 
+        text-align: center;
+        width: 90%;
+    }
+    .filter-button.active{
+        padding: 10px 20px;
+  
+    }
+    .types-recipes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 8px;
+    }
+
+    .item {
+        width: 45%;
+        text-align: center;
+    }
+
+    .item img {
+        width: 70px;
+        height: 70px;
+    }
+    .about .container .image img{
+        width: 300px;
+        height: auto;
+    }
+}

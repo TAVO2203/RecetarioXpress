@@ -22,7 +22,7 @@
         <a href="#">Aprende</a>
         <a href="#">Comunidad</a>
     </nav>
-    <button class="btn1" onclick="window.location.href='{{ route('register') }}'"><strong>Registrarse</strong></button>
+    <button class="btn1" onclick="window.location.href='{{ route('Usuarios.create') }}'"><strong>Registrarse</strong></button>
     <button class="btn2"><strong>Iniciar Sesión</strong></button>
     <div class="icons">
        <div class="fas fa-search" id="search-btn"></div>
@@ -32,7 +32,6 @@
         <input type="search" id="search-box" placeholder="Busca tus recetas aquí...">
         <label for="search-box" class="fas fa-search"></label>
     </div>
-    <script src="JS/script.js"></script>
 </header>
 <section class="home" id="home">
     <div class="content">
@@ -57,8 +56,8 @@
         <li><a href="#todo" class="filter-button active">Todas</a></li>
         <li><a href="#tipos" class="filter-button">Tipo de platillos</a></li>
         <li><a href="#delicias" class="filter-button">Delicias con...</a></li>
-        <li><a href="#"class="filter-button">Repostería y panadería</a></li>
-        <li><a href="#" class="filter-button">Ocasión especial</a></li>
+        <li><a href="#RyP"class="filter-button">Repostería y panadería</a></li>
+        <li><a href="#ocasion" class="filter-button">Ocasión especial</a></li>
     </ul>
     <div class="container" id="todo">
       <div class="types-recipes">
@@ -134,6 +133,97 @@
           </a>
       </div>    
   </div>
+  <div class="container">
+    <div class="types-recipes">
+        <h2 class="H2-all" id="RyP"> Repostería y Panadería </h2>
+          <a href="#" class="item">
+           <img src="images/Reposteria/brownie.webp" alt="Imagen de Brownies" title="Brownies preparaciones">
+           <p> Brownies </p>
+          </a>
+          <a href="#" class="item">
+             <img src="images/Reposteria/cheesecake.webp" alt="Imagen de Chessecake" title="Chessecake preparaciones">
+             <p> Chessecake </p>
+          </a>
+          <a href="#" class="item">
+             <img src="images/Reposteria/cupcakes.webp" alt="Imagen de Cupcakes" title="Cupcakes preparaciones">
+             <p> Cupcakes </p>
+          </a>
+          <a href="#" class="item">
+            <img src="images/Reposteria/churros.jpeg" alt="Imagen de Churros" title="Churros preparaciones">
+            <p> Churros </p>
+          </a>
+          <a href="#" class="item">
+            <img src="images/Reposteria/tiramisu.avif" alt="Imagen de tiramisu" title="Tiramisu preparaciones">
+            <p> Tiramisu </p>
+          </a>
+          <a href="#" class="item">
+            <img src="images/Reposteria/croissant.jpg" alt="Imagen de Croissant" title="Recetas con Croissant">
+            <p> Croissant </p>
+          </a>
+          <a href="#" class="item">
+            <img src="images/Reposteria/baguette.jpg" alt="Imagen de Baguette" title="Baguette preparaciones"> 
+            <p> Baguette </p>
+          </a>
+          <a href="#" class="item">
+            <img src="images/Reposteria/donas.jpg" alt="Imagen de Donas" title="Donas preparaciones"> 
+            <p> Donas </p>
+          </a>
+      </div>    
+  </div>
+  <div class="container">
+    <div class="types-recipes">
+        <h2 class="H2-all" id="ocasion"> Ocasión Especial </h2>
+          <a href="#" class="item">
+           <img src="images/Ocasiones/lomo.webp" alt="Imagen de Lomo de cerdo" title="Lomo de Cerdo preparaciones">
+           <p> Lomo de cerdo en salsa de ciruela </p>
+          </a>
+          <a href="#" class="item">
+             <img src="images/Ocasiones/pechuga.jpg" alt="Imagen de Pechuga de pollo" title="Pechiga de pollo preparaciones">
+             <p> Pechuga de pollo rellena de espinaca y queso </p>
+          </a>
+          <a href="#" class="item">
+             <img src="images/Ocasiones/Salmon.jpg" alt="Imagen de Salmón en salsa" title="Salmón en salsa preparaciones">
+             <p> Salmón en salsa de mostaza y miel </p>
+          </a>
+          <a href="#" class="item">
+            <img src="images/Ocasiones/risotto.avif" alt="Imagen de Risotto" title="Risotto preparaciones">
+            <p> Risotto de hongos </p>
+          </a>
+          <a href="#" class="item">
+            <img src="images/Ocasiones/pastaA.jpg" alt="Imagen de Pasta" title="Pasta preparaciones">
+            <p> Pasta Alfredo con camarones </p>
+          </a>
+          <a href="#" class="item">
+            <img src="images/Ocasiones/PanL.webp" alt="Imagen de Pan" title="Panes preparaciones">
+            <p> Pan de leche </p>
+          </a>
+          <a href="#" class="item">
+            <img src="images/Ocasiones/mojito.webp" alt="Imagen de Mojito" title="Mojito preparaciones"> 
+            <p> Mojito de mango </p>
+          </a>
+          <a href="#" class="item">
+            <img src="images/Ocasiones/ensalada.jpg" alt="Imagen de Ensalada" title="Ensaladas preparaciones"> 
+            <p> Ensalada César con pollo </p>
+          </a>
+      </div>    
+  </div>
 </section>
+<!--sobre nosotros-->
+<section class="about" id="about">
+  <h1 class="heading">Sobre Nosotros</h1>
+  <div class="container">
+    <div class="image">
+      <img src="images/fondoNosotros.jpg" alt="">
+    </div>
+    <div class="content">
+      <p>RecetarioXpress es una plataforma digital que te permite descubrir, compartir y disfrutar de las mejores recetas caseras. 
+        Con ingredientes accesibles y pasos sencillos, cocinar nunca fue tan divertido. 
+        Encuentra platos deliciosos, tips de cocina y todo lo que necesitas para convertirte en un experto culinario. 
+        ¡Empieza a cocinar hoy!</p>
+    </div>
+  </div>
+</section>
+<script src="{{ asset('JS/script.js') }}"></script>
+
 </body>
 </html>

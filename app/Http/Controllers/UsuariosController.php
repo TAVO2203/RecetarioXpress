@@ -14,7 +14,7 @@ class UsuariosController extends Controller
      */
     public function index(Request $request)
     {
-        $texto = trim($request->get('texto'));
+        $texto = trim($request->get('texto'));                                                                                                                                                                                                                                                                                                                                                                                                          
         $Usuarios = DB::table('Usuarios')
             ->select('id', 'Nombre', 'Email', 'Password')
             ->where('Nombre', 'LIKE', '%' .$texto. '%')

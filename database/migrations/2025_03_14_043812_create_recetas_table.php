@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('recetas', function (Blueprint $table) {
             $table->increments('id');
             $table->String('Titulo', 100);
-            $table->unsignedInteger('usuarios_id');
-            $table->unsignedInteger('categorias_id');
-            $table->String('Instrucciones', 100);
+            $table->unsignedInteger('usuarios_id')->nullable();
+            $table->unsignedInteger('categorias_id')->nullable();
+            $table->text('Instrucciones');
             $table->timestamps();
 
             $table->foreign('usuarios_id')->references('id')->on('usuarios')->onDelete('cascade');

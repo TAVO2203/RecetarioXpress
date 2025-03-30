@@ -9,10 +9,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome'); 
-})->name('home'); 
+})->name('home');
 
 Route::resource('/Usuarios', UsuariosController::class);
 Route::get('/Usuarios/create', [UsuariosController::class, 'create'])->name('Usuarios.create');
+
+Route::resource('/Recetas', RecetaController::class);
+Route::get('/Recetas/create', [RecetaController::class, 'create'])->name('Recetas.create');
 
 
 

@@ -223,7 +223,52 @@
     </div>
   </div>
 </section>
+<!--Agregar recetas-->
+<section class="add-recipes" id="add-recipes">
+  <h1 class="headings">Te gustaría compartir tus conocimientos?</h1>
+  <div class="containers">
+    <div class="contents">
+      <p>Si eres un apasionado de la cocina y te encanta compartir tus recetas, 
+        ¡esta es tu oportunidad! Regístrate en nuestra plataforma y comparte tus recetas con la comunidad. 
+        Inspira a otros a cocinar y disfruta de la experiencia de compartir tus conocimientos culinarios. 
+        ¡Únete a RecetarioXpress y comparte tus recetas hoy!</p>
+    </div>
+    <button class="btn4" onclick="window.location.href='{{ route('Recetas.create') }}'"><strong>Agregar receta</strong></button>
+</section>
 <script src="{{ asset('JS/script.js') }}"></script>
+<!--footer-->
+<footer>
+  <div class="footer-col">
+    <h4>Nuestras Redes</h4>
+    <div class="links">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+  <div class="footer-col">
+    <h4> Acerca De RecetarioXpress</h4>
+    <ul>
+      <li> <a href="#about">Sobre Nosotros</a></li>
+      <li> <a href="#">Nuestras Políticas</a></li>
+      <li> <a href="#">Términos De Servicio</a></li>
+      <li> <a href="#">Políticas De Privacidad</a></li>
+      <li> <a href="#">Políticas De Reembolsos y Devoluciones</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4> Contacto </h4>
+    <ul class="info">
+      <li>
+        <span><i class="fa-solid fa-phone"></i></span><p>+57 123 456 7890</p>
+      </li>
+      <li>
+        <span><i class="fa-solid fa-envelope"></i></span><p>RecetarioXpress@gmail.com</p>
+      </li>
+    </ul>
+  </div>
+</footer>
 
 </body>
 </html>
